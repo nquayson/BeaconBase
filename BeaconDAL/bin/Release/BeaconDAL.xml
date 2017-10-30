@@ -1,0 +1,79 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BeaconDAL
+</name>
+</assembly>
+<members>
+<member name="M:BeaconDAL.BeaconEntities.#ctor">
+	<summary>
+Initializes a new BeaconEntities object using the connection string found in the 'BeaconEntities' section of the application configuration file.
+</summary>
+</member><member name="M:BeaconDAL.BeaconEntities.#ctor(System.String)">
+	<summary>
+Initialize a new BeaconEntities object.
+</summary>
+</member><member name="M:BeaconDAL.BeaconEntities.#ctor(System.Data.EntityClient.EntityConnection)">
+	<summary>
+Initialize a new BeaconEntities object.
+</summary>
+</member><member name="P:BeaconDAL.BeaconEntities.Beacons">
+	<summary>
+There are no comments for Beacons in the schema.
+</summary>
+</member><member name="M:BeaconDAL.BeaconEntities.AddToBeacons(BeaconDAL.Beacon)">
+	<summary>
+There are no comments for Beacons in the schema.
+</summary>
+</member><member name="T:BeaconDAL.BeaconEntities">
+	<summary>
+There are no comments for BeaconEntities in the schema.
+</summary>
+</member><member name="M:BeaconDAL.Beacon.CreateBeacon(System.Int64)">
+	<summary>
+Create a new Beacon object.
+</summary>
+	<param name="beaconID">Initial value of BeaconID.</param>
+</member><member name="P:BeaconDAL.Beacon.BeaconID">
+	<summary>
+There are no comments for Property BeaconID in the schema.
+</summary>
+</member><member name="P:BeaconDAL.Beacon.BeaconName">
+	<summary>
+There are no comments for Property BeaconName in the schema.
+</summary>
+</member><member name="P:BeaconDAL.Beacon.Northing">
+	<summary>
+There are no comments for Property Northing in the schema.
+</summary>
+</member><member name="P:BeaconDAL.Beacon.Easting">
+	<summary>
+There are no comments for Property Easting in the schema.
+</summary>
+</member><member name="P:BeaconDAL.Beacon.Elevation">
+	<summary>
+There are no comments for Property Elevation in the schema.
+</summary>
+</member><member name="P:BeaconDAL.Beacon.Description">
+	<summary>
+There are no comments for Property Description in the schema.
+</summary>
+</member><member name="P:BeaconDAL.Beacon.Photo">
+	<summary>
+There are no comments for Property Photo in the schema.
+</summary>
+</member><member name="P:BeaconDAL.Beacon.Date">
+	<summary>
+There are no comments for Property Date in the schema.
+</summary>
+</member><member name="T:BeaconDAL.Beacon">
+	<summary>
+There are no comments for BeaconModel.Beacon in the schema.
+</summary>
+	<KeyProperties>
+BeaconID
+</KeyProperties>
+</member>
+</members>
+</doc>

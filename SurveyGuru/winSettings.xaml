@@ -1,0 +1,30 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	x:Class="winSettings"
+	x:Name="Window"
+	Title="Settings"
+	Width="480" Height="300" mc:Ignorable="d">
+
+	<Grid x:Name="LayoutRoot">
+		<CheckBox x:Name="chkAudio" Margin="0,25,8,0" VerticalAlignment="Top" Content=" Audio" IsChecked="True" HorizontalAlignment="Right" Width="62"/>
+		<TextBlock Text="Locale" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="21,110.96,0,0" VerticalAlignment="Top"/>
+		<TextBlock Margin="21,0,0,47" Text="Projection" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+		<TextBlock Margin="21,0,0,91.08" VerticalAlignment="Bottom" Text="Coordinate System" TextWrapping="Wrap" HorizontalAlignment="Left" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+		<ComboBox Margin="196,110.96,120,128.04" SelectedIndex="0">
+			<ComboBoxItem Content="KNUST (Default)"/>
+			<ComboBoxItem Content="Other Locale..."/>
+		</ComboBox>
+		<ComboBox Margin="196,0,120,85.08" VerticalAlignment="Bottom" SelectedIndex="0">
+			<ComboBoxItem Content="War Office"/>
+			<ComboBoxItem Content="WGS 84"/>
+			<ComboBoxItem Content="Other..."/>
+		</ComboBox>
+		<ComboBox Margin="196,0,120,41" VerticalAlignment="Bottom" SelectedIndex="0">
+			<ComboBoxItem Content="Gh Traverse Mercator"/>
+			<ComboBoxItem Content="Universal Transverse Mercator (UTM)"/>
+			<ComboBoxItem Content="Other..."/>
+		</ComboBox>
+	</Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="winHelp"
+	x:Name="Window"
+	Title="winHelp"
+	Width="500" Height="480" WindowStartupLocation="CenterScreen">
+
+	<Grid x:Name="LayoutRoot">
+		<ScrollViewer Margin="0,70,0,0">
+			<TextBlock Margin="5,0,0,0" FontSize="16" TextWrapping="Wrap"><Run Text="The BeaconBase is an application that houses the database of beacons for windows users"/><LineBreak/><Span><Run Text="What can BeaconBase do for you?"/></Span><LineBreak/><LineBreak/><Span><Run Text="1. It can store and update beacons "/></Span><LineBreak/><Span><Run Text="Clicks add to enable an addition of a beacon for an update."/></Span><LineBreak/><Span><Run Text="Click delete to expunge any beacon of no use."/></Span><LineBreak/><Span><Run Text="Click edit to edit the coordinates of the beacons for correction and for update"/></Span><LineBreak/><Span><Run Text="Clicks save to save the newly updated coordinates to update the database"/></Span><LineBreak/><LineBreak/><Span><Run Text="2. It can measure bearing and distance between beacons"/></Span><LineBreak/><Span><Run Text="Click on beacon of interest and click on mark; then click on the second beacon of interest and click on mark. Bearing and distance between them will be displayed in the box at the bottom right of the window."/></Span><LineBreak/><LineBreak/><Span><Run Text="3. It can produce a hard copy of beacons and its info."/></Span><LineBreak/><Span><Run Text="Click on the beacon of choice and click on print to print out a hard copy of the beacon info."/></Span><LineBreak/><LineBreak/><Span><Run Text="4. It can give you the location of the beacon"/></Span><LineBreak/><Span><Run Text="Click on the beacon of choice and click on visualize to open a GIS window to show the location of that beacon"/></Span></TextBlock>
+		</ScrollViewer>
+		<TextBlock HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" Text="quickStart" TextWrapping="Wrap" FontFamily="Bauhaus 93" FontSize="26.667" Opacity="0.6"/>
+	</Grid>
+</Window>

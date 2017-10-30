@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BeaconModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="BeaconModelStoreContainer">
+          <EntitySet Name="Beacons" EntityType="BeaconModel.Store.Beacons" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="Beacons">
+          <Key>
+            <PropertyRef Name="BeaconID" />
+          </Key>
+          <Property Name="BeaconID" Type="bigint" Nullable="false" />
+          <Property Name="BeaconName" Type="nvarchar" MaxLength="30" />
+          <Property Name="Northing" Type="nvarchar" MaxLength="30" />
+          <Property Name="Easting" Type="nvarchar" MaxLength="30" />
+          <Property Name="Elevation" Type="nvarchar" MaxLength="30" />
+          <Property Name="Description" Type="nvarchar" MaxLength="100" />
+          <Property Name="Photo" Type="nvarchar" MaxLength="100" />
+          <Property Name="Date" Type="datetime" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BeaconModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="BeaconEntities">
+          <EntitySet Name="Beacons" EntityType="BeaconModel.Beacon" />
+        </EntityContainer>
+        <EntityType Name="Beacon">
+          <Key>
+            <PropertyRef Name="BeaconID" />
+          </Key>
+          <Property Name="BeaconID" Type="Int64" Nullable="false" />
+          <Property Name="BeaconName" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Northing" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Easting" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Elevation" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Photo" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Date" Type="DateTime" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="BeaconModelStoreContainer" CdmEntityContainer="BeaconEntities">
+          <EntitySetMapping Name="Beacons">
+            <EntityTypeMapping TypeName="IsTypeOf(BeaconModel.Beacon)">
+              <MappingFragment StoreEntitySet="Beacons">
+                <ScalarProperty Name="BeaconID" ColumnName="BeaconID" />
+                <ScalarProperty Name="BeaconName" ColumnName="BeaconName" />
+                <ScalarProperty Name="Northing" ColumnName="Northing" />
+                <ScalarProperty Name="Easting" ColumnName="Easting" />
+                <ScalarProperty Name="Elevation" ColumnName="Elevation" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="BeaconModel">
+        <EntityTypeShape EntityType="BeaconModel.Beacon" Width="1.5" PointX="0.75" PointY="0.75" Height="2.5571907552083335" IsExpanded="true" /></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
